@@ -9,27 +9,29 @@
 
 	<body>
 
-		<a href="">
-			Home
-		</a>
-		/
-		<a href="contato.html">
-			Contato
-		</a>
+		<h2>Produtos</h2>
 
+	<table border="2">
 
-		<!--<a href="http://www.google.com">
-			Clique aqui
-		</a>-->
-		
-		<h2>Página principal</h2>
-		<p>	
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt ligula enim, et tempor turpis ornare vitae. Donec lobortis risus in neque tempor condimentum.
-		</p>
+		<tr>
+			<th>Código</th>
+			<th>Produto</th>
+			<th>Preço</th>
+		</tr>
 
-		<p>	
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt ligula enim, et tempor turpis ornare vitae. Donec lobortis risus in neque tempor condimentum.
-		</p>
+		<tr>
+			<td>001</td>
+			<td>Notebook</td>
+			<td>R$ 2500,99</td>
+		</tr>
+
+		<tr>
+			<td>002</td>
+			<td>Tablet</td>
+			<td>R$ 999,99</td>
+		</tr>
+
+	</table>
 
 	</body>
 
