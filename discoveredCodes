@@ -1,19 +1,19 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-
 	<head>
-		<title>Página principal</title>
+		<title>Inline Style</title>
 		<meta charset="utf-8">
 	</head>
-
 	<body>
 
-		<h2>Caracteres especiais</h2>
+		<h1>Estilo CSS (cascading style sheets)</h1>
+		<p style="color: green;">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales neque lectus, at porta eros convallis sit amet. Nam at semper orci. Vestibulum aliquam nunc quis neque placerat vestibulum. In sodales, orci a feugiat maximus, eros diam consectetur enim, in consequat nulla libero non sem. Vestibulum tempus rhoncus elit, a maximus ipsum scelerisque tempus. In nunc turpis, fermentum vitae ante a, accumsan fringilla elit. Maecenas risus dui, consequat ac aliquet quis, molestie a ipsum. 
+		</p>
 
-		<!--	&lt;p&gt; -->
-		home &nbsp;&nbsp;&nbsp;- quem somos - contato
-		
+		<p style="color: green;">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales neque lectus, at porta eros convallis sit amet. Nam at semper orci. Vestibulum aliquam nunc quis neque placerat vestibulum. In sodales, orci a feugiat maximus, eros diam consectetur enim, in consequat nulla libero non sem. Vestibulum tempus rhoncus elit, a maximus ipsum scelerisque tempus. In nunc turpis, fermentum vitae ante a, accumsan fringilla elit. Maecenas risus dui, consequat ac aliquet quis, molestie a ipsum. 
+		</p>
+
 	</body>
-
 </html>
