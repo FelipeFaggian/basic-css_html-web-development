@@ -3,17 +3,39 @@
 	<head>
 		<title>Inline Style</title>
 		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			p {
+				color: red;
+			}	
+
+			h1 {
+				color: blue;
+			}
+
+		</style>
+
 	</head>
 	<body>
 
 		<h1>Estilo CSS (cascading style sheets)</h1>
-		<p style="color: green;">
+		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales neque lectus, at porta eros convallis sit amet. Nam at semper orci. Vestibulum aliquam nunc quis neque placerat vestibulum. In sodales, orci a feugiat maximus, eros diam consectetur enim, in consequat nulla libero non sem. Vestibulum tempus rhoncus elit, a maximus ipsum scelerisque tempus. In nunc turpis, fermentum vitae ante a, accumsan fringilla elit. Maecenas risus dui, consequat ac aliquet quis, molestie a ipsum. 
 		</p>
 
-		<p style="color: green;">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales neque lectus, at porta eros convallis sit amet. Nam at semper orci. Vestibulum aliquam nunc quis neque placerat vestibulum. In sodales, orci a feugiat maximus, eros diam consectetur enim, in consequat nulla libero non sem. Vestibulum tempus rhoncus elit, a maximus ipsum scelerisque tempus. In nunc turpis, fermentum vitae ante a, accumsan fringilla elit. Maecenas risus dui, consequat ac aliquet quis, molestie a ipsum. 
+		</p>
+
+		<h1>Formatações</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales neque lectus, at porta eros convallis sit amet. Nam at semper orci. Vestibulum aliquam nunc quis neque placerat vestibulum. In sodales, orci a feugiat maximus, eros diam consectetur enim, in consequat nulla libero non sem. Vestibulum tempus rhoncus elit, a maximus ipsum scelerisque tempus. In nunc turpis, fermentum vitae ante a, accumsan fringilla elit. Maecenas risus dui, consequat ac aliquet quis, molestie a ipsum. 
+		</p>
+
+		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales neque lectus, at porta eros convallis sit amet. Nam at semper orci. Vestibulum aliquam nunc quis neque placerat vestibulum. In sodales, orci a feugiat maximus, eros diam consectetur enim, in consequat nulla libero non sem. Vestibulum tempus rhoncus elit, a maximus ipsum scelerisque tempus. In nunc turpis, fermentum vitae ante a, accumsan fringilla elit. Maecenas risus dui, consequat ac aliquet quis, molestie a ipsum. 
 		</p>
 
 	</body>
-</html>
+</html>	
