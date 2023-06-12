@@ -1,89 +1,37 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Div e Span</title>
+		<title>Bordas</title>
 		<meta charset="utf-8">
 
-	<!--	<style type="text/css">
-			
-			p {
-				color: red;
-			}	
-
-			h1 {
-				color: green;
-			}
-
-			<!-.azul {
-				color: blue;
-			}
-			
-	   	  #principal { 
-				background: gray;
-			} 
-		
-		</style> -->
+		<!-- dotted - Defines a dotted border
+		dashed - Defines a dashed border
+		solid - Defines a solid border
+		double - Defines a double border
+		groove - Defines a 3D grooved border. The effect depends on the border-color value
+		ridge - Defines a 3D ridged border. The effect depends on the border-color value
+		inset - Defines a 3D inset border. The effect depends on the border-color value
+		outset - Defines a 3D outset border. The effect depends on the border-color value
+		none - Defines no border
+		hidden - Defines a hidden border -->
 
 		<style type="text/css">
-			
-			#topo {
-				background: blue;
-			}
 
 			#conteudo {
-				background: red;
+				/*border: 15px outset red;*/
+				border-color: red green yellow blue;
+				border-width: 15px 10px 8px 3px;
+				border-style: solid;
 			}
-
-			#rodape {
-				background: green;
-			}
-
-			.produto {
-				background: gray;
-				margin: 10px;
-			}
-		
-			.azul {
-				color: blue;
-			}
-
 		</style>
 
 	</head>
-
 		<body>
 
-			<div id="topo">
-				
-				<img src="imagens/amazon.png" width="200">
-				<ul>
-					<li>Home</li>
-					<li>Produtos</li>
-					<li>Contato</li>
-				</ul>
-
-			</div>
-
 			<div id="conteudo">
-				
-				<div class="produto">
-					Produto 1
-				</div>
-
-				<div class="produto">
-					Produto 2
-				</div>
-
-				<div class="produto">
-					Produto 3
-				</div>
-
-			</div>
-
-			<div id="rodape">
-				
-				Todos os <span class="azul">direitos</span> reservados
-
+				Bordas<br>
+				Bordas<br>
+				Bordas<br>
 			</div>
 
 		</body>
