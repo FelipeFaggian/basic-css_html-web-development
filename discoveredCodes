@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Classes e Ids</title>
+		<title>Div e Span</title>
 		<meta charset="utf-8">
 
 	<!--	<style type="text/css">
@@ -26,77 +26,65 @@
 
 		<style type="text/css">
 			
-			p {
-				color: red;
-			}	
-
-			h1 {
-				color: green;
+			#topo {
+				background: blue;
 			}
 
-			<!-.azul {
-				color: blue;
+			#conteudo {
+				background: red;
 			}
-			
-			#cabecalho {
+
+			#rodape {
 				background: green;
 			}
+
+			.produto {
+				background: gray;
+				margin: 10px;
+			}
+		
+			.azul {
+				color: blue;
+			}
+
 		</style>
 
 	</head>
-<!--	<body id="principal"> -->
+
 		<body>
 
-
-			<div>
+			<div id="topo">
 				
-				<div id="cabecalho">
-					<img src="imagens/logo.png">
-					<ul>
-						<li>Home</li>
-						<li>Quem somos</li>
-						<li>Contato</li>
-					</ul>
+				<img src="imagens/amazon.png" width="200">
+				<ul>
+					<li>Home</li>
+					<li>Produtos</li>
+					<li>Contato</li>
+				</ul>
+
+			</div>
+
+			<div id="conteudo">
+				
+				<div class="produto">
+					Produto 1
 				</div>
 
-				<div id="conteudo-principal">
-					
-					<div class="coluna">
-						Coluna 1
-					</div>
+				<div class="produto">
+					Produto 2
+				</div>
 
-					<div class="coluna">
-						Coluna 2
-					</div>
-
-					<div class="coluna">
-						Coluna 3
-					</div>
-
+				<div class="produto">
+					Produto 3
 				</div>
 
 			</div>
 
+			<div id="rodape">
+				
+				Todos os <span class="azul">direitos</span> reservados
 
+			</div>
 
-
-		<h1 class="azul">Estilo CSS (cascading style sheets)</h1>
-		<p class="azul">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales neque lectus, at porta eros convallis sit amet. Nam at semper orci. Vestibulum aliquam nunc quis neque placerat vestibulum. In sodales, orci a feugiat maximus, eros diam consectetur enim, in consequat nulla libero non sem. Vestibulum tempus rhoncus elit, a maximus ipsum scelerisque tempus. In nunc turpis, fermentum vitae ante a, accumsan fringilla elit. Maecenas risus dui, consequat ac aliquet quis, molestie a ipsum. 
-		</p>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales neque lectus, at porta eros convallis sit amet. Nam at semper orci. Vestibulum aliquam nunc quis neque placerat vestibulum. In sodales, orci a feugiat maximus, eros diam consectetur enim, in consequat nulla libero non sem. Vestibulum tempus rhoncus elit, a maximus ipsum scelerisque tempus. In nunc turpis, fermentum vitae ante a, accumsan fringilla elit. Maecenas risus dui, consequat ac aliquet quis, molestie a ipsum. 
-		</p>
-
-		<h1>Formatações</h1>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales neque lectus, at porta eros convallis sit amet. Nam at semper orci. Vestibulum aliquam nunc quis neque placerat vestibulum. In sodales, orci a feugiat maximus, eros diam consectetur enim, in consequat nulla libero non sem. Vestibulum tempus rhoncus elit, a maximus ipsum scelerisque tempus. In nunc turpis, fermentum vitae ante a, accumsan fringilla elit. Maecenas risus dui, consequat ac aliquet quis, molestie a ipsum. 
-		</p>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales neque lectus, at porta eros convallis sit amet. Nam at semper orci. Vestibulum aliquam nunc quis neque placerat vestibulum. In sodales, orci a feugiat maximus, eros diam consectetur enim, in consequat nulla libero non sem. Vestibulum tempus rhoncus elit, a maximus ipsum scelerisque tempus. In nunc turpis, fermentum vitae ante a, accumsan fringilla elit. Maecenas risus dui, consequat ac aliquet quis, molestie a ipsum. 
-		</p>
-
-	</body>
+		</body>
 </html>	
