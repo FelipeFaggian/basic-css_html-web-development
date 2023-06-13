@@ -1,57 +1,50 @@
+<!-- (pagina1.html)
+
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Cor e imagem de fundo</title>
+		<title>Estilo css externo</title>
 		<meta charset="utf-8">
 
-		<style type="text/css">
-			
-			/*.fundo { 
-				 background-color: #f2f2f2; 
-				background-color: blue;
-				background: blue;
-				color: white;
-			}*/
-
-			/* https://www.w3schools.com/css/css_background.asp */
-
-		/*body { */
-			h1 {
-				/*background-image: url('imagens/yoshi.png');*/
-				/*background-repeat: no-repeat; */
-				/*background-repeat: repeat; */
-				/*background-repeat: repeat-x;*/
-				/*background-repeat: repeat-y;*/
-				background-repeat: repeat-x;
-				/*background-attachment: fixed;*/
-				/*background-attachment: scroll;*/
-				background-attachment: scroll;
-				/*background-position: center; */
-				/*background-position: left center;*/
-				/*background-position: right center;*/
-				/*background-position: center top;*/
-				background-position: center;
-			}
-
-			.fundo {
-				background: blue url('imagens/yoshi.png') repeat-x scroll top;
-			}
-
-		</style>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
 
 	</head>
-		<body class="fundo">
+		<body>
 			
-		<!--	<h1 class="fundo">Conteúdo de título 1</h1> -->
-			<h1>
-				Conteúdo de título 1<br>
-			</h1>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque iaculis justo, non dapibus diam iaculis vitae. Maecenas id placerat velit. Integer non erat libero. Nunc non rhoncus urna, eu congue mauris. Vestibulum auctor, felis feugiat ultrices auctor, quam urna accumsan lacus, sit amet tempus eros lacus ut erat.</p>
-
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque iaculis justo, non dapibus diam iaculis vitae. Maecenas id placerat velit. Integer non erat libero. Nunc non rhoncus urna, eu congue mauris. Vestibulum auctor, felis feugiat ultrices auctor, quam urna accumsan lacus, sit amet tempus eros lacus ut erat.</p>
+			<h1 class="texto">Conteúdo da página 1</h1>
 
 		</body>
 </html>	
+
+
+----
+
+
+(pagina2.html)
+
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Estilo css externo</title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	</head>
+		<body>
+			
+			<h1 class="texto">Conteúdo da página 2</h1>
+
+		</body>
+</html>	
+
+
+-----
+
+
+ (estilo.css)
+
+.texto {
+		color: red;
+		background: orange;
+		}
