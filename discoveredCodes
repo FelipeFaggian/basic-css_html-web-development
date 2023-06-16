@@ -1,85 +1,81 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>Página inicial</title>
+
+	<title>Elementos flutuantes</title>
 
 	<meta charset="utf-8">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+
+		#principal {
+			border: 5px solid red;
+			background: green;
+		}
+
+		.conteudo {
+			background: blue;
+			border: 1px solid gray;
+			width: 200px;
+			height: 200px;
+			margin: 10px;
+			float: right;
+		}
+
+		/*.conteudo1 {
+			background: red;
+			border: 1px solid gray;
+			width: 200px;
+			height: 250px;
+			margin: 10px;
+			float: left;
+		}*/
+
+		.conteudo-zero {
+			background: red;
+			border: 1px solid gray;
+			width: 200px;
+			height: 250px;
+			margin: 10px;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+	</style>		
+	
 </head>
 
 <body>
 
-	<div id="noticia">
-		<h2>Lorem ipsum dolor sit amet</h2>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at tortor porta, aliquam mi a, sodales enim.	
-		</p>
-	</div>
+	<div id="principal">
 
-	<!--
-	<div class="conteudo">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-	</div>
+		<div class="conteudo">
+			Conteúdo 1
+		 </div>
 
-	<div class="conteudo2">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 2
-	</div>
+		 <div class="conteudo">
+			Conteúdo 2
+		 </div>
 
-	<p>Lorem ipsum</p>
-	-->
+		 <div class="conteudo">
+			Conteúdo 3
+		 </div>
+		 
+		<!--<div class="conteudo-zero">
+		 	conteudo 4
+		 </div>-->
 
+	<p class="clear">
+		 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. Donec eget lorem a massa ultricies consectetur eu convallis metus. Nullam sit amet nisi sed tortor fringilla rhoncus. Suspendisse cursus a augue nec maximus. Etiam tristique a ligula consectetur pretium. Sed aliquet interdum tempus. Etiam ac vehicula neque, et congue diam. Nullam non diam sed diam aliquet volutpat. Donec aliquet at nisi suscipit semper. Nunc consectetur eros orci, at finibus nulla pellentesque ac.
+	</p>
+
+		 <!--
+		 <div class="clear">aa</div> -->
+
+	 </div>
+	
 </body>
 
 </html>
-
-
-----
-(style.css)
-
-/*
-Modelo de caixa
-
-
-.conteudo {
-	border: 1px solid red;
-
-	padding-top: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	padding-left: 20px;
-
-	padding: 20px 15px 10px 5px;
-	padding: 20px;
-
-
-	margin-top: 20px;
-	margin-right: 20px;
-	margin-left: 20px;
-	margin-bottom: 20px;
-	margin: 10px;
-
-	width: 150px;
-}
-
-.conteudo2 {
-	margin: 5px;
-	width: 150px;
-	border: 1px solid red;
-} */
-
-/*
-Noticia
-*/
-
-#noticia {
-	background: #f9f9f9;
-	border: 1px solid gray;
-	padding: 10px;
-}
-
-h2 {
-	margin: 0px;
-}
-
