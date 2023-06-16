@@ -2,80 +2,107 @@
 <html>
 <head>
 
-	<title>Elementos flutuantes</title>
+		<title>Practice of Floating Elements</title>
 
 	<meta charset="utf-8">
 
 	<style type="text/css">
 
-		#principal {
-			border: 5px solid red;
-			background: green;
+		body {
+			background: #f4f4f4;
 		}
 
-		.conteudo {
-			background: blue;
-			border: 1px solid gray;
-			width: 200px;
-			height: 200px;
-			margin: 10px;
-			float: right;
+		#principal{
+			width: 920px;
 		}
 
-		/*.conteudo1 {
-			background: red;
-			border: 1px solid gray;
-			width: 200px;
-			height: 250px;
-			margin: 10px;
+		.noticia {
+			background: #e5e5e5;
+			padding: 5px;
+			width: 280px;
+			margin: 7px;
 			float: left;
-		}*/
+		}
 
-		.conteudo-zero {
-			background: red;
-			border: 1px solid gray;
-			width: 200px;
-			height: 250px;
-			margin: 10px;
+		.imagem-galeria {
+			background: white;
+			width: 265px;
+			padding: 5px;
+			float: left;
+			margin: 15px;
 		}
 
 		.clear {
 			clear: both;
 		}
 
-	</style>		
-	
+	</style>	
+
 </head>
 
 <body>
 
 	<div id="principal">
 
-		<div class="conteudo">
-			Conteúdo 1
-		 </div>
+	<div>
+		
+			<div class="noticia">
+				<h2>Lorem ipsum dolor sit amet 1</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. Donec eget lorem a massa ultricies consectetur eu convallis metus. Nullam sit amet nisi sed tortor fringilla rhoncus. Suspendisse cursus a augue nec maximus. 
+				</p>
+				<a href="">Veja mais</a>
+			</div>
 
-		 <div class="conteudo">
-			Conteúdo 2
-		 </div>
+			<div class="noticia">
+				<h2>Lorem ipsum dolor sit amet 2</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. Donec eget lorem a massa ultricies consectetur eu convallis metus. Nullam sit amet nisi sed tortor fringilla rhoncus. Suspendisse cursus a augue nec maximus. 
+				</p>
+				<a href="">Veja mais</a>
+			</div>
 
-		 <div class="conteudo">
-			Conteúdo 3
-		 </div>
-		 
-		<!--<div class="conteudo-zero">
-		 	conteudo 4
-		 </div>-->
+			<div class="noticia">
+				<h2>Lorem ipsum dolor sit amet 3</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. Donec eget lorem a massa ultricies consectetur eu convallis metus. Nullam sit amet nisi sed tortor fringilla rhoncus. Suspendisse cursus a augue nec maximus. 
+				</p>
+				<a href="">Veja mais</a>
+			</div>
 
-	<p class="clear">
-		 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. Donec eget lorem a massa ultricies consectetur eu convallis metus. Nullam sit amet nisi sed tortor fringilla rhoncus. Suspendisse cursus a augue nec maximus. Etiam tristique a ligula consectetur pretium. Sed aliquet interdum tempus. Etiam ac vehicula neque, et congue diam. Nullam non diam sed diam aliquet volutpat. Donec aliquet at nisi suscipit semper. Nunc consectetur eros orci, at finibus nulla pellentesque ac.
-	</p>
+		</div><!-- fim noticia -->
 
-		 <!--
-		 <div class="clear">aa</div> -->
+		<div class="clear"></div>
 
-	 </div>
-	
+		<div>
+
+			<div class="imagem-galeria">
+				<img src="imagens/imagem1.png">
+				<p>Resumo</p>
+			</div>
+
+			<div class="imagem-galeria">
+				<img src="imagens/imagem2.png">
+				<p>Resumo</p>
+			</div>
+
+			<div class="imagem-galeria">
+				<img src="imagens/imagem3.png">
+				<p>Resumo</p>
+			</div>
+
+			<div class="imagem-galeria">
+				<img src="imagens/imagem4.png">
+				<p>Resumo</p>
+			</div>
+
+			<div class="imagem-galeria">
+				<img src="imagens/imagem5.png">
+				<p>Resumo</p>
+			</div>
+			
+		</div>
+	</div> <!-- fim principal -->
 </body>
 
 </html>
