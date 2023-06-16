@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Positioning (static, relative, absolute and fixed)</title>
 
-	<title>Elementos inline, block e inline-block</title>
+		<meta charset="utf-8">
 
-	<meta charset="utf-8">
+		<style type="text/css">
 
-	<style type="text/css">
-		
-		.borda {
-			border: 1px solid red;
-			/*display: inline;*/ 
-			/*display: block;*/
-			display: inline-block;
+		body {
+			background: #007fc7;
+		}
+			
+		#container {
+			background: #FFF;
+			width: 800px;
+			margin: 10px auto;
+			padding: 10px;
 		}
 
-	</style>
-	
+		h1 {
+			/*position: static;*/
+
+		}
+
+		p {
+			/*position: static;*/
+			width: 300px;
+		}
+
+		.relative {
+			border: 1px solid red;
+			position: relative;
+			/* top, right, bottom e left */
+			/*top: 20px;
+			left: 80px;*/
+			/*top: -20px;*/
+			/*top: 0px;
+			left: 0px;
+			right: 20px;*/
+			bottom: -20px;
+		}
+
+		</style>
+
 	</head>
+
 	<body>
 
-		<span class="borda">
-			inline 1
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		</span>
-		<span class="borda">inline 2</span>
+		<div id="container">
 
-		<!--
-		<div class="borda">Bloco 1</div>
-		<div class="borda">Bloco 2</div>
-		-->
+			<h1>Posicionamentos</h1>
+
+			<p>
+				P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p class="relative">
+				 P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+			
+		</div>
 
 	</body>
+
 </html>
