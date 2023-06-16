@@ -1,108 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-		<title>Practice of Floating Elements</title>
+	<title>Elementos inline, block e inline-block</title>
 
 	<meta charset="utf-8">
 
 	<style type="text/css">
-
-		body {
-			background: #f4f4f4;
-		}
-
-		#principal{
-			width: 920px;
-		}
-
-		.noticia {
-			background: #e5e5e5;
-			padding: 5px;
-			width: 280px;
-			margin: 7px;
-			float: left;
-		}
-
-		.imagem-galeria {
-			background: white;
-			width: 265px;
-			padding: 5px;
-			float: left;
-			margin: 15px;
-		}
-
-		.clear {
-			clear: both;
-		}
-
-	</style>	
-
-</head>
-
-<body>
-
-	<div id="principal">
-
-	<div>
 		
-			<div class="noticia">
-				<h2>Lorem ipsum dolor sit amet 1</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. Donec eget lorem a massa ultricies consectetur eu convallis metus. Nullam sit amet nisi sed tortor fringilla rhoncus. Suspendisse cursus a augue nec maximus. 
-				</p>
-				<a href="">Veja mais</a>
-			</div>
+		.borda {
+			border: 1px solid red;
+			/*display: inline;*/ 
+			/*display: block;*/
+			display: inline-block;
+		}
 
-			<div class="noticia">
-				<h2>Lorem ipsum dolor sit amet 2</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. Donec eget lorem a massa ultricies consectetur eu convallis metus. Nullam sit amet nisi sed tortor fringilla rhoncus. Suspendisse cursus a augue nec maximus. 
-				</p>
-				<a href="">Veja mais</a>
-			</div>
+	</style>
+	
+	</head>
+	<body>
 
-			<div class="noticia">
-				<h2>Lorem ipsum dolor sit amet 3</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. Donec eget lorem a massa ultricies consectetur eu convallis metus. Nullam sit amet nisi sed tortor fringilla rhoncus. Suspendisse cursus a augue nec maximus. 
-				</p>
-				<a href="">Veja mais</a>
-			</div>
+		<span class="borda">
+			inline 1
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		</span>
+		<span class="borda">inline 2</span>
 
-		</div><!-- fim noticia -->
+		<!--
+		<div class="borda">Bloco 1</div>
+		<div class="borda">Bloco 2</div>
+		-->
 
-		<div class="clear"></div>
-
-		<div>
-
-			<div class="imagem-galeria">
-				<img src="imagens/imagem1.png">
-				<p>Resumo</p>
-			</div>
-
-			<div class="imagem-galeria">
-				<img src="imagens/imagem2.png">
-				<p>Resumo</p>
-			</div>
-
-			<div class="imagem-galeria">
-				<img src="imagens/imagem3.png">
-				<p>Resumo</p>
-			</div>
-
-			<div class="imagem-galeria">
-				<img src="imagens/imagem4.png">
-				<p>Resumo</p>
-			</div>
-
-			<div class="imagem-galeria">
-				<img src="imagens/imagem5.png">
-				<p>Resumo</p>
-			</div>
-			
-		</div>
-	</div> <!-- fim principal -->
-</body>
-
+	</body>
 </html>
