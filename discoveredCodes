@@ -16,6 +16,7 @@
 			width: 800px;
 			margin: 10px auto;
 			padding: 10px;
+			position: relative;
 		}
 
 		h1 {
@@ -26,6 +27,24 @@
 		p {
 			/*position: static;*/
 			width: 300px;
+			/*margin: 0px;*/
+		}
+
+		.fixed {
+			border: 1px solid red;
+			background: #f2f2f2;
+			margin: 0px;
+			position: fixed;
+			bottom: 0px;
+			right: 0px;
+		}
+
+		.absolute {
+			border: 1px solid red;
+			background: #f2f2f2;
+			position: absolute;
+			top: 80px;
+			right: 80px;
 		}
 
 		.relative {
@@ -55,8 +74,52 @@
 				P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
 			</p>
 
-			<p class="relative">
+			<p class="fixed">
 				 P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
 			</p>
 
 			<p>
