@@ -1,65 +1,57 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
-
-		<title>Overlapping elements</title>
+		<title>Links</title>
 
 		<meta charset="utf-8">
 
 		<style type="text/css">
-
-			.conteudo1 {
-				border: 1px solid red;
-				background: orange;
-				width: 200px;
-				height: 200px;
-				position: absolute;
-				z-index: 2;
+			
+			a {
+				padding: 5px 10px;
+				text-decoration: none;
 			}
 
-			.conteudo2 {
-				border: 1px solid red;
-				background: green;
-				width: 200px;
-				height: 200px;
-				position: absolute;
-				top: 80px;
-				left: 80px;
-				z-index: 100;
+			/* Links não visitados */
+			a:link, a:visited {
+				color: #b9c941;
 			}
 
-				.conteudo3 {
-				border: 1px solid red;
-				background: yellow;
-				width: 200px;
-				height: 200px;
-				position: absolute;
-				top: 160px;
-				left: 160px;
-				z-index: 0;
+			/* Links visitados */
+			/*a:visited {
+				color: #c0c0c0;
+			} */
+
+			/*a:visited {
+				color: #b9c941;
+			}*/
+
+			/* Link Hover, passa o cursor sobre o link */
+			a:hover {
+				color: #FFF;
+				background: #6d790f;
 			}
 
+			/* Link ativado, quando clicado */
+			a:active {
+				color: #e4f371;
+			}
 
 		</style>
-
-
+	
+	
 	</head>
+	<body>
 
-		<body>
+		<a href="https://www.google.com.br">Google</a> |
 
-			<div class="conteudo1">
-				Conteudo 1
-			</div>
+		<a href="https://www.tecmundo.com.br">Tec Mundo</a> |
 
-			<div class="conteudo2">
-				Conteudo 2
-			</div>
+		<a href="https://www.yhdmlo.com.br">yhdmlo</a> |
 
-			<div class="conteudo3">
-				Conteudo 3
-			</div>
+		<a href="https://www.megacurioso.com.br">Mega Curioso</a>
 
-		</body>
+
+	</body>
 
 </html>
