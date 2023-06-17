@@ -1,133 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<title>Positioning (static, relative, absolute and fixed)</title>
+
+		<title>Overlapping elements</title>
 
 		<meta charset="utf-8">
 
 		<style type="text/css">
 
-		body {
-			background: #007fc7;
-		}
-			
-		#container {
-			background: #FFF;
-			width: 800px;
-			margin: 10px auto;
-			padding: 10px;
-			position: relative;
-		}
+			.conteudo1 {
+				border: 1px solid red;
+				background: orange;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				z-index: 2;
+			}
 
-		h1 {
-			/*position: static;*/
+			.conteudo2 {
+				border: 1px solid red;
+				background: green;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top: 80px;
+				left: 80px;
+				z-index: 100;
+			}
 
-		}
+				.conteudo3 {
+				border: 1px solid red;
+				background: yellow;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top: 160px;
+				left: 160px;
+				z-index: 0;
+			}
 
-		p {
-			/*position: static;*/
-			width: 300px;
-			/*margin: 0px;*/
-		}
-
-		.fixed {
-			border: 1px solid red;
-			background: #f2f2f2;
-			margin: 0px;
-			position: fixed;
-			bottom: 0px;
-			right: 0px;
-		}
-
-		.absolute {
-			border: 1px solid red;
-			background: #f2f2f2;
-			position: absolute;
-			top: 80px;
-			right: 80px;
-		}
-
-		.relative {
-			border: 1px solid red;
-			position: relative;
-			/* top, right, bottom e left */
-			/*top: 20px;
-			left: 80px;*/
-			/*top: -20px;*/
-			/*top: 0px;
-			left: 0px;
-			right: 20px;*/
-			bottom: -20px;
-		}
 
 		</style>
 
+
 	</head>
 
-	<body>
+		<body>
 
-		<div id="container">
+			<div class="conteudo1">
+				Conteudo 1
+			</div>
 
-			<h1>Posicionamentos</h1>
+			<div class="conteudo2">
+				Conteudo 2
+			</div>
 
-			<p>
-				P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
+			<div class="conteudo3">
+				Conteudo 3
+			</div>
 
-			<p class="fixed">
-				 P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-
-			<p>
-				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat sodales tempus. Nullam at orci finibus, vehicula turpis eu, sodales metus. 
-			</p>
-			
-		</div>
-
-	</body>
+		</body>
 
 </html>
