@@ -1,57 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
-		<title>Links</title>
-
+		<title>Seletores</title>
 		<meta charset="utf-8">
 
-		<style type="text/css">
-			
-			a {
-				padding: 5px 10px;
-				text-decoration: none;
-			}
-
-			/* Links não visitados */
-			a:link, a:visited {
-				color: #b9c941;
-			}
-
-			/* Links visitados */
-			/*a:visited {
-				color: #c0c0c0;
-			} */
-
-			/*a:visited {
-				color: #b9c941;
-			}*/
-
-			/* Link Hover, passa o cursor sobre o link */
-			a:hover {
-				color: #FFF;
-				background: #6d790f;
-			}
-
-			/* Link ativado, quando clicado */
-			a:active {
-				color: #e4f371;
-			}
-
-		</style>
-	
-	
+		<!-- estilo customizado -->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		
 	</head>
+
 	<body>
 
-		<a href="https://www.google.com.br">Google</a> |
+		<ul>
+			<li>
+				<!--<span>-->
+					<a href="">Home</a>
+				<!--</span>-->
+			</li>
+			<li>
+				<a href="">Sobre</a>
+			</li>
+		</ul>
 
-		<a href="https://www.tecmundo.com.br">Tec Mundo</a> |
+		<a href="">Link teste</a>
 
-		<a href="https://www.yhdmlo.com.br">yhdmlo</a> |
+		<div>
 
-		<a href="https://www.megacurioso.com.br">Mega Curioso</a>
+			<h2>Titulo</h2>
+			<p>
+				Esse é um parágrafo
+				<a href="">clique aqui</a>
+			</p>
+			 
+		</div>
 
+		<!--teste -->
+		<div id="cabecalho">
+			<!--<p>Parágrafo 0 da página</p>-->
+			<h1>Titulo da página</h1>
+			<!--<div>teste</div>-->
+		<!--	<div>
+				<p>Parágrafo 1 da página</p>
+				<p>Parágrafo 2 da página</p>
+				<p>Parágrafo 3 da página</p>
+			</div> -->
+			<p>Parágrafo 1 da página</p>
+			<p>Parágrafo 2 da página</p>
+			<p>Parágrafo 3 da página</p>
+		</div>
+
+		<span class="verde">Teste span</span>
+		<p class="verde">Teste parágrafo</p>
 
 	</body>
 
 </html>
+
+------
+
+
+(estilo.css)
+
+
+/* ****** Seletor universal **
+
+* {
+	border: 1px solid red;
+}*/
+
+/* ****** Seletor de texto **
+
+h1 {
+	color: green;
+}*/
+
+/* ****** Seletor de classe ***/
+
+/*.verde {
+	color: green;
+}
+
+p.verde {
+	color: green;
+}*/
+
+/* ****** Seletor de ID **
+
+#cabecalho {
+	border: 1px solid blue;
+}	*/
+
+/* ****** Seletor de filho **
+
+li>a {
+	color: red;
+	text-decoration: none;
+}*/
+
+/* ****** Seletor de descendente ***/
+
+/*p a {
+	color: green;
+}*/
+
+/*div a {
+	color: green;
+}*/
+
+/*div a {
+	color: green;
+}*/
+
+/*li a {
+	color: green;
+}*/
+
+/* ****** Seletor de irmão adjacente **
+h1+p {
+	color: red;
+}*/
+
+/* ****** Seletor de irmão geral **/
+
+h1~p {
+	color: pink;
+}
