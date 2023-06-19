@@ -1,66 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 	<head>
-		<title>Seletores</title>
+		<title>Herança e especificidade</title>
 		<meta charset="utf-8">
 
 		<!-- estilo customizado -->
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
-		
+
 	</head>
 
 	<body>
 
-		<ul>
-			<li>
-				<!--<span>-->
-					<a href="">Home</a>
-				<!--</span>-->
-			</li>
-			<li>
-				<a href="">Sobre</a>
-			</li>
-		</ul>
-
-		<a href="">Link teste</a>
-
-		<div>
-
-			<h2>Titulo</h2>
+		<!--<div class="pagina" style="border: 5px solid red;">-->
+			<div id="pagina">
+			<h2 class="verde" id="amarelo">
+				Lorem ipsum dolor sit amet, consectetur
+			</h2>
 			<p>
-				Esse é um parágrafo
-				<a href="">clique aqui</a>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet nulla ex. Sed volutpat ultricies elementum. Maecenas ut tellus mollis mi laoreet luctus. Mauris sit amet vulputate felis. 
 			</p>
-			 
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet nulla ex. Sed volutpat ultricies elementum. Maecenas ut tellus mollis mi laoreet luctus. Mauris sit amet vulputate felis. 
+			</p>
 		</div>
-
-		<!--teste -->
-		<div id="cabecalho">
-			<!--<p>Parágrafo 0 da página</p>-->
-			<h1>Titulo da página</h1>
-			<!--<div>teste</div>-->
-		<!--	<div>
-				<p>Parágrafo 1 da página</p>
-				<p>Parágrafo 2 da página</p>
-				<p>Parágrafo 3 da página</p>
-			</div> -->
-			<p>Parágrafo 1 da página</p>
-			<p>Parágrafo 2 da página</p>
-			<p>Parágrafo 3 da página</p>
-		</div>
-
-		<span class="verde">Teste span</span>
-		<p class="verde">Teste parágrafo</p>
 
 	</body>
 
 </html>
 
-------
-
+-----
 
 (estilo.css)
-
 
 /* ****** Seletor universal **
 
@@ -125,3 +96,52 @@ h1+p {
 h1~p {
 	color: pink;
 }
+
+/* ****** Herança e especificidade ***/
+
+/* * {
+	border: 1px solid blue;
+}*/
+
+ /*body {/*
+ 	color: red;
+ 	/*border: 1px solid blue;*/
+ 	/*background: gray;*/
+ /*}*/
+ /*#pagina p {*/
+ 	/*color: red  !important;*/
+ 	/*color: red;
+ }
+
+ #pagina p {
+ 	color: blue;
+ }
+
+ Se um seletor for mais especifico que outro,
+ a regra mais especifica será aplicada
+ (terá precedência sobre regras mais gerais) */
+/*h2 {
+	color: blue;
+}*/
+
+* {
+	color: red;
+}
+
+h2 {/*3*/
+	color: blue;
+}
+
+/*h2#amarelo {
+	color: yellow;
+}*/
+
+h2.verde {/*2*/
+	color: green;
+}
+
+h2#amarelo {/*1*/
+	color: yellow;
+}
+
+
