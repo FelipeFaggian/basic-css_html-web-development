@@ -10,11 +10,34 @@
 
 	</head>
 
-	<body id="home">
+	<body>
+
+		<h2>Home</h2>
+		<ul>
+			<li id="atual"> 
+				<a href="index.html">Home</a> 
+			</li>
+			<li> 
+				<a href="sobre.html">Sobre</a> 
+			</li>
+			<li> 
+				<a href="servicos.html">Serviços</a> 
+			</li>
+			<li> 
+				<a href="noticias.html">Notícias</a> 
+			</li>
+			<li> 
+				<a href="contato.html">Contato</a>
+			</li>
+		</ul>
+
+		<!-- barra de navegação vertical e horizontal
+
+		<body id="home">
 
 		<h2>Home</h2>
 		<ul id="navegacao">
-			<!--<li class="selecionado"> <a href="home.html">Home</a> </li>-->
+			<li class="selecionado"> <a href="home.html">Home</a> </li>
 			<li class="home primeiro"> 
 				<a href="index.html">Home</a> 
 			</li>
@@ -32,7 +55,7 @@
 			</li>
 		</ul>
 
-		<!--
+		
 		<h2>Lista de atividades</h2>
 		<ul>
 			<li>Ir ao dentista</li>
@@ -47,51 +70,49 @@
 </html>
 
 
----
+-----
+
 
 (estilo.css)
 
 
-******** Barra de navegação horizontal **** */
-/*ul#navegacao {
+**************  Barra de navegação com abas ******** */
 
-
-}*/
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
 
 ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	width: 720px;
-	background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
-	float: left;
 }
 
 ul li {
+	/*background: url(../imagens/aba-direita2.png) no-repeat top right;*/
+	background: url(../imagens/aba-direita.png) no-repeat top right;
 	float: left;
 }
 
-ul a {
+li a {
 	display: block;
 	padding: 0 2em;
-	line-height: 2em;
+	line-height: 3em;
 	text-decoration: none;
+	/*background: url(../imagens/aba-esquerda2.png) no-repeat top left;*/
+	background: url(../imagens/aba-esquerda.png) no-repeat top left;
 	color: #fff;
-	background: url(../imagens/divisor.png) repeat-y left top;
-}
-
-ul .primeiro a {
-	background: none;
 }
 
 ul a:hover {
-	color: #085662;
-	background: #44cade;
+	color: #894a1f;
 }
 
-#home #navegacao .home a, 
-#sobre #navegacao .sobre a,
-#servicos #navegacao .servicos a {
-	color: #085662;
-	background: #44cade;
-} 
+ul #atual {
+	background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a {
+	background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+}
