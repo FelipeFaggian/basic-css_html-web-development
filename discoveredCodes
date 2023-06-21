@@ -15,16 +15,31 @@
 			<div id="marca">Marca</div>
 			<div id="conteudo">
 				<div id="conteudo-principal">
+
+					<h2>Conteúdo principal</h2>
+
+					<!--<div id="imagem">
+						<img src="imagens/natureza.jpg">	
+					</div> -->
+
+					<img class="img-noticia" src="imagens/natureza.jpg">
+					
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, ante vitae dictum egestas, risus urna tempor lorem, sit amet pretium augue felis a arcu. Donec ac ipsum eu tortor malesuada euismod. 
+					</p>
 					<h2>Conteúdo principal</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, ante vitae dictum egestas, risus urna tempor lorem, sit amet pretium augue felis a arcu. Donec ac ipsum eu tortor malesuada euismod. 
 					</p>
+					
 				</div>
 				<div id="conteudo-secundario">
+
 					<h2>Conteúdo secundário</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, ante vitae dictum egestas, risus urna tempor lorem, sit amet pretium augue felis a arcu. Donec ac ipsum eu tortor malesuada euismod. 
 					</p>
+
 				</div>
 			</div>
 			<div id="navegacao">
@@ -45,11 +60,252 @@
 
 </html>
 
------
+-------------
 
 (estilo.css)
 
+/* ****** Seletor universal **
 
+* {
+	border: 1px solid red;
+}*/
+
+/* ****** Seletor de texto **
+
+h1 {
+	color: green;
+}*/
+
+/* ****** Seletor de classe ***/
+
+/*.verde {
+	color: green;
+}
+
+p.verde {
+	color: green;
+}*/
+
+/* ****** Seletor de ID **
+
+#cabecalho {
+	border: 1px solid blue;
+}	*/
+
+/* ****** Seletor de filho **
+
+li>a {
+	color: red;
+	text-decoration: none;
+}*/
+
+/* ****** Seletor de descendente ***/
+
+/*p a {
+	color: green;
+}*/
+
+/*div a {
+	color: green;
+}*/
+
+/*div a {
+	color: green;
+}*/
+
+/*li a {
+	color: green;
+}*/
+
+/* ****** Seletor de irmão adjacente **
+h1+p {
+	color: red;
+}*/
+
+/* ****** Seletor de irmão geral **/
+
+h1~p {
+	color: pink;
+}
+
+/* ****** Herança e especificidade ***/
+
+/* * {
+	border: 1px solid blue;
+}*/
+
+ /*body {/*
+ 	color: red;
+ 	/*border: 1px solid blue;*/
+ 	/*background: gray;*/
+ /*}*/
+ /*#pagina p {*/
+ 	/*color: red  !important;*/
+ 	/*color: red;
+ }
+
+ #pagina p {
+ 	color: blue;
+ }
+
+ Se um seletor for mais especifico que outro,
+ a regra mais especifica será aplicada
+ (terá precedência sobre regras mais gerais) */
+/*h2 {
+	color: blue;
+}*/
+
+/** {
+	color: red;
+}
+
+h2 {/*3*/
+/*	color: blue;
+}
+
+/*h2#amarelo {
+	color: yellow;
+}*/			
+
+/*h2.verde {/*2*/
+	/*color: green;
+}
+
+h2#amarelo {/*1*/
+	/*color: yellow;
+}
+
+/****** 
+ * Barra de navegação vertical ******/
+/*
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 5px 20px;
+	background: url(../imagens/seta.png) no-repeat left center;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none
+}
+
+ul a {
+	/*border: 1px solid red;*/
+/*	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+	background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover/*, .selecionado a*/ /*{
+/*	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+
+#home #navegacao .home a, 
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;	
+}
+
+******** Barra de navegação horizontal **** */
+/*ul#navegacao {
+
+
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+	background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+	float: left;
+}
+
+ul li {
+	float: left;
+}
+
+ul a {
+	display: block;
+	padding: 0 2em;
+	line-height: 2em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../imagens/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a {
+	background: none;
+}
+
+ul a:hover {
+	color: #085662;
+	background: #44cade;
+}
+
+#home #navegacao .home a, 
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a {
+	color: #085662;
+	background: #44cade;
+} 
+
+
+**************  Barra de navegação com abas ******** 
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+}
+
+ul li {
+	/*background: url(../imagens/aba-direita2.png) no-repeat top right;
+	background: url(../imagens/aba-direita.png) no-repeat top right;
+	float: left;
+}
+
+li a {
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	/*background: url(../imagens/aba-esquerda2.png) no-repeat top left;
+	background: url(../imagens/aba-esquerda.png) no-repeat top left;
+	color: #fff;
+}
+
+ul a:hover {
+	color: #894a1f;
+}
+
+ul #atual {
+	background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a {
+	background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+} 
 
 ************** Layouts ********* */
 
@@ -59,21 +315,26 @@ body {
 } 
 
 #container {
-	border: 1px solid red;
 	width: 85%; /*720px*/
 	margin: 0 auto;
 	background: #fff;
-	min-width: 720px;
+	min-width: 720px /*820px;*/
 	max-width: 1280px;
 }
 
 #marca {
 	width: 100%;
-	height: 100px;
-	background: #9E9E9E;
+	height: 200px;
+	background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
 	text-align: center;
-	line-height: 100px;
+	line-height: 200px;
 }
+
+/*#imagem {
+	width: 90%;
+	overflow: hidden;
+	border: 1px solid red;
+} */
 
 #conteudo {
 	width: 75%; /*520px -> 74.28 -> 75*/
@@ -92,12 +353,21 @@ body {
 #conteudo-principal {
 	width: 63%; /*320px -> 64*/
 	float: left;
+	border: 1px solid red;
+}
+
+img.img-noticia {
+	border: 1px solid red;
+	width: 94%;
+	padding: 2%;
+	max-width: 600px;
 }
 
 #conteudo-secundario {
 	width: 34%; /* 180px -> 36 */
 	float: right;
 	background: #d1d1d1;
+	border: 1px solid red;
 }
 
 #conteudo-secundario h1, 
