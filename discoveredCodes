@@ -11,112 +11,95 @@
 	</head>
 
 	<body>
-	
-		<h2>Estilizando formulários</h2>
 
-		<form>
+		<div id="container">
 			
-			<fieldset>
-				<legend>Detalhes de contato</legend>
+			<img src="imagens/perfil.png">
 
+			<form>
+				
 				<div>
-					<label for="nome">Nome:</label>
-					<!--<label>Nome:-->
-					<input type="text" name="nome" id="nome">
-					<!--</label>-->
+					<input class="email" type="text" name="email" id="email" placeholder="Digite seu e-mail">
 				</div>
 
 				<div>
-					<label for="email">Email:</label>
-					<!--<label>Nome:-->
-					<input type="text" name="email" id="email">
-					<!--</label>-->
+					<input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha">
 				</div>
 
 				<div>
-					<label for="url">URL:</label>
-					<!--<label>Nome:-->
-					<input type="text" name="url" id="url">
-					<!--</label>-->
+					<input class="submit" type="submit" value="Logar">	
 				</div>
 
-			</fieldset>
+			</form>
 
-			<fieldset>
-				<legend>Comentários</legend>
-				<div>
-					<label for="mensagem">Mensagem:</label>
-					<textarea name="mensagem" id="mensagem"></textarea>
-				</div>
-			</fieldset>
+		</div>
 
-			<fieldset>
-				<legend>Lembrar de mim</legend>
-				<div>
-					<label>
-						<input class="radio" type="radio" name="lembrar" id="sim">Sim
-					</label>
-				</div>
-
-				<div>
-					<label>
-						<input class="radio" type="radio" name="lembrar" id="nao">Não
-					</label>
-				</div>
-
-			</fieldset>
-
-		</form>
 
 	</body>
 
 </html>
 
-
-
------
+------
 
 (estilo.css)
 
-
-
-
-/* ********* Estilizando formulários ****** */
+****************  Estilizando formulários 2 ****** */
 
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
 }
 
-fieldset {
-	margin: 1em 0;
-	padding: 1em;
-	border: 1px solid #ccc;
-	background: #f8f8f8;
+#container {
+	width: 400px;
+	height: 300px;
+	background-color: rgba(255, 255, 255, 0.3);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 120px;
+	text-align: center;
 }
 
- legend {
- 	font-weight: bold;
- }
+#container /*img.imagem*/ img{
+	width: 120px;
+	height: 120px;
+	margin-top: -60px;
+	margin-bottom: 30px;
+}
 
-  label {
-  	/*border: 1px solid red;*/
-  	display: block;
-  	cursor: pointer;
-  }
+input {
+	height: 40px;
+	width: 80%;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding-left: 40px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
 
-  input /*[type="text"]*/ {
-  	width: /*300px;*/ 20em;  /*100%;*/
-  }
+input.email {
+	background-image: url(../imagens/icone-usuario.png);
+}
 
-  textarea {
-  	width: 20em; /*100%;*/
-  	height: 10em;
-  }
 
-  input.radio, input.checkbox, input.submit {
-  	width: auto;
-  }
+input.senha {
+	background-image: url(../imagens/icone-cadeado.png);
+}
 
-  .radio {
-  	margin-right: 1em;
-  }
+input.submit {
+	color: #fff;
+	background-color: #f79300;
+	border: 2px solid #db7d00;
+	padding: 5px 20px;
+	height: 45px;
+	width: 90%;
+
+	background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+	background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+	background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+	background: linear-gradient(to bottom, #faa600, #f68a00);
+}
