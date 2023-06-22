@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>Layouts</title>
+		<title>Estilizando tabelas</title>
 		<meta charset="utf-8">
 
 		<!-- estilo customizado -->
@@ -11,139 +11,91 @@
 	</head>
 
 	<body>
-		<div id="container">
-			<div id="marca">Marca</div>
-			<div id="conteudo">
-				<div id="conteudo-principal">
+	
+		<h2>Estilizando tabelas</h2>
 
-					<h2>Conteúdo principal</h2>
+		<table>
+			
+			<tr>
+				<th class="text-align titulos">Código</th>
+				<th class="text-align titulos">Produto</th>
+				<th class="titulos numero">Preço</th>
+			</tr>
 
-					<!--<div id="imagem">
-						<img src="imagens/natureza.jpg">	
-					</div> -->
+			<tr class="text-align">
+				<th>001</th>
+				<th>Notebook</th>
+				<th class="numero">R$ 2500,00</th>
+			</tr>
 
-					<img class="img-noticia" src="imagens/natureza.jpg">
-					
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, ante vitae dictum egestas, risus urna tempor lorem, sit amet pretium augue felis a arcu. Donec ac ipsum eu tortor malesuada euismod. 
-					</p>
-					<h2>Conteúdo principal</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, ante vitae dictum egestas, risus urna tempor lorem, sit amet pretium augue felis a arcu. Donec ac ipsum eu tortor malesuada euismod. 
-					</p>
-					
-				</div>
-				<div id="conteudo-secundario">
+			<tr class="text-align alternado">
+				<th>002</th>
+				<th>Tablet</th>
+				<th class="numero">R$ 1500,00</th>
+			</tr>
 
-					<h2>Conteúdo secundário</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, ante vitae dictum egestas, risus urna tempor lorem, sit amet pretium augue felis a arcu. Donec ac ipsum eu tortor malesuada euismod. 
-					</p>
+			<tr class="text-align">
+				<th>003</th>
+				<th>Iphone</th>
+				<th class="numero">R$ 3500,00</th>
+			</tr>
 
-				</div>
-			</div>
-			<div id="navegacao">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Sobre</a></li>
-					<li><a href="#">Notícias</a></li>
-					<li><a href="#">Produtos</a></li>
-					<li><a href="#">Clientes</a></li>
-					<li><a href="#">Contato</a></li>
-				</ul>
-			</div>
-			<div id="rodape">Rodapé</div>
+			<tr class="text-align alternado">
+				<th>004</th>
+				<th>Nexus</th>
+				<th class="numero">R$ 3500,00</th>
+			</tr>
 		</div>
-
+		</table>
 
 	</body>
 
 </html>
 
--------------
+
+----
+
 
 (estilo.css)
 
 
-************** Layouts ********* */
+/* ****** Estilizando tabelas ******  */
 
 body {
-	font-family: "Trebcuhet MS", Helvetica, sans-serif;
-	background: #f2f2f2;
-} 
-
-#container {
-	/*border: 1px solid red;*/
-	width: 960px; /*720px*/
-	margin: 0 auto;
-	background: #fff url(../imagens/coluna.png) repeat-y left top;
-	min-width: 720px /*820px;*/
-	max-width: 1280px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-#marca {
-	width: 100%;
-	height: 200px;
-	background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
-	text-align: center;
-	line-height: 200px;
+ table {
+ 	width: 600px;
+ 	/*border-collapse: separate;*/
+ 	border-collapse: collapse;
+ }
+
+.text-align {
+	text-align: left;
 }
 
-/*#imagem {
-	width: 90%;
-	overflow: hidden;
-	border: 1px solid red;
-} */
-
-#conteudo {
-	width: 75%; /*520px -> 74.28 -> 75*/
-	float: right;
+th, td {
+	padding: 7px;
 }
 
-#navegacao {
-	width: 23%; /*180px -> 25.71 -> 25*/
-	float: left;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	/*background: #d1d1d1;*/
+ th.titulos{
+ 	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-transform: uppercase;
+	/*text-align: left;*/
+	font-size: 90%;
+	letter-spacing: 0.1em;
 }
 
-
-#conteudo-principal {
-	width: 63%; /*320px -> 64*/
-	float: left;
+tr.alternado {
+	background-color: #efefef;
 }
 
-img.img-noticia {
-	width: 94%;
-	padding: 2%;
-	max-width: 600px;
+tr:hover {
+	background-color: #c3e6e5;
 }
 
-#conteudo-secundario {
-	width: 34%; /* 180px -> 36 */
-	float: right;
-	background: #d1d1d1;
-}
-
-#conteudo-secundario h1, 
-#conteudo-secundario h2,
-#conteudo-secundario h3, 
-#conteudo-secundario p {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-#navegacao ul {
-	list-style: none;
-}
-
-#navegacao li a {
-	text-decoration: none;
-}
-
-#rodape {
-	clear: both;
-	background: #c4c4c4;
-	padding: 5px;
+.numero {
+	text-align: right;
 }
