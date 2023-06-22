@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>Estilizando tabelas</title>
+		<title>Estilizando formulários</title>
 		<meta charset="utf-8">
 
 		<!-- estilo customizado -->
@@ -12,90 +12,111 @@
 
 	<body>
 	
-		<h2>Estilizando tabelas</h2>
+		<h2>Estilizando formulários</h2>
 
-		<table>
+		<form>
 			
-			<tr>
-				<th class="text-align titulos">Código</th>
-				<th class="text-align titulos">Produto</th>
-				<th class="titulos numero">Preço</th>
-			</tr>
+			<fieldset>
+				<legend>Detalhes de contato</legend>
 
-			<tr class="text-align">
-				<th>001</th>
-				<th>Notebook</th>
-				<th class="numero">R$ 2500,00</th>
-			</tr>
+				<div>
+					<label for="nome">Nome:</label>
+					<!--<label>Nome:-->
+					<input type="text" name="nome" id="nome">
+					<!--</label>-->
+				</div>
 
-			<tr class="text-align alternado">
-				<th>002</th>
-				<th>Tablet</th>
-				<th class="numero">R$ 1500,00</th>
-			</tr>
+				<div>
+					<label for="email">Email:</label>
+					<!--<label>Nome:-->
+					<input type="text" name="email" id="email">
+					<!--</label>-->
+				</div>
 
-			<tr class="text-align">
-				<th>003</th>
-				<th>Iphone</th>
-				<th class="numero">R$ 3500,00</th>
-			</tr>
+				<div>
+					<label for="url">URL:</label>
+					<!--<label>Nome:-->
+					<input type="text" name="url" id="url">
+					<!--</label>-->
+				</div>
 
-			<tr class="text-align alternado">
-				<th>004</th>
-				<th>Nexus</th>
-				<th class="numero">R$ 3500,00</th>
-			</tr>
-		</div>
-		</table>
+			</fieldset>
+
+			<fieldset>
+				<legend>Comentários</legend>
+				<div>
+					<label for="mensagem">Mensagem:</label>
+					<textarea name="mensagem" id="mensagem"></textarea>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Lembrar de mim</legend>
+				<div>
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="sim">Sim
+					</label>
+				</div>
+
+				<div>
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="nao">Não
+					</label>
+				</div>
+
+			</fieldset>
+
+		</form>
 
 	</body>
 
 </html>
 
 
-----
 
+-----
 
 (estilo.css)
 
 
-/* ****** Estilizando tabelas ******  */
+
+
+/* ********* Estilizando formulários ****** */
 
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
- table {
- 	width: 600px;
- 	/*border-collapse: separate;*/
- 	border-collapse: collapse;
+fieldset {
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px solid #ccc;
+	background: #f8f8f8;
+}
+
+ legend {
+ 	font-weight: bold;
  }
 
-.text-align {
-	text-align: left;
-}
+  label {
+  	/*border: 1px solid red;*/
+  	display: block;
+  	cursor: pointer;
+  }
 
-th, td {
-	padding: 7px;
-}
+  input /*[type="text"]*/ {
+  	width: /*300px;*/ 20em;  /*100%;*/
+  }
 
- th.titulos{
- 	border-top: 1px solid #999;
-	border-bottom: 1px solid #111;
-	text-transform: uppercase;
-	/*text-align: left;*/
-	font-size: 90%;
-	letter-spacing: 0.1em;
-}
+  textarea {
+  	width: 20em; /*100%;*/
+  	height: 10em;
+  }
 
-tr.alternado {
-	background-color: #efefef;
-}
+  input.radio, input.checkbox, input.submit {
+  	width: auto;
+  }
 
-tr:hover {
-	background-color: #c3e6e5;
-}
-
-.numero {
-	text-align: right;
-}
+  .radio {
+  	margin-right: 1em;
+  }
