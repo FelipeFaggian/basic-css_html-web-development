@@ -3,7 +3,7 @@
 
 	<head>
 
-		<title>Novas tags html 5</title>
+		<title>Novas tags de input html 5</title>
 
 		<meta charset="utf-8">
 
@@ -12,101 +12,62 @@
 		<!-- Estilo customizado -->
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 
-		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-		<![endif]-->
-			
 	</head>
 
 	<body>
 
-		<!--<div id="cabecalho"></div> -->
+		<!-- Novos inputs e atributos HTML 5 -->
+		<form>
 
-		<header>
+			<!-- Nome  required-->
+			<label for="nome">Nome</label>
+			<input type="text" name="nome" id="nome" autofocus>
+			<br><br>
+
+			<!-- E-mail required-->
+			<label for="email">E-mail</label>
+			<input type="email" id="email" >
+			<br><br>
+
 			
-			<h1>Logo</h1>
-			<span>Meu site</span>
-
-		</header>
-
-		<!--<div id="navegacao">
+			<!-- Número -->
+			<label for="numero">Número</label>
+			<input type="number" id="numero" min="1" max="20" step="5">
+			<br><br>		
 			
-			<ul>
-				<li> <a href="">Home</a> </li>
-				<li> <a href="">Sobre</a> </li>
-				<li> <a href="">Contato</a> </li>
-			</ul>
 
-		</div> -->
+			<!-- Url -->
+			<label for="url">URL</label>
+			<input type="url" id="url" placeholder="ex: http://www...">
+			<br><br>		
 
-		<nav>
 
-			<ul>
-				<li> <a href="">Home</a> </li>
-				<li> <a href="">Sobre</a> </li>
-				<li> <a href="">Contato</a> </li>
-			</ul>
-				
-		</nav>
+			<!-- Pesquisa -->
+			<label for="pesquisa">Pesquisa</label>
+			<input type="search" id="pesquisa">
+			<br><br>		
 
-	<!--	<div class="postagem">
+
+			<!-- Range -->
+			<label for="range">Range</label>
+			<input type="range" id="range" min="1" max="20" value="2">
+			<br><br>		
+
+			<!-- Data -->
+			<label for="data">Data</label>
+			<input type="date" id="data">
+			<br><br>		
+
 			
-		</div> -->
-
-		<article>
-				
-			<h3>Novos cursos</h3>
-			<!-- <div class="secao1"></div> -->
-
-			<section>
-				
-				<h4>Curso de programação</h4>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, ante vitae dictum egestas, risus urna tempor lorem, sit amet pretium augue felis a arcu.
-				</p>
-
-				<span>
-					Atualizado em:
-					<time>30/06/2023</time>
-				</span>
-
-			</section>
+			<!-- Cor -->
+			<label for="cor">Cor</label>
+			<input type="color" id="cor">
+			<br><br>		
 
 
-			<section>
-				
-				<h4>Curso de gráficos</h4>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, ante vitae dictum egestas, risus urna tempor lorem, sit amet pretium augue felis a arcu.
-				</p>
+			<input type="submit" name="" value="Enviar">
 
-				<span>
-					Atualizado em:
-					<time>30/06/2023</time>
-				</span>
-
-			</section>
-
-		</article>
-
-	<!--	<div id="rodape">
-			
-		</div> --->
-
-		<aside>
-			
-			<h3>Sobre o autor</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-			</p>
-			 
-		</aside>
-
-		<footer>
-			
-			<p> &copy; 2020 - Felipe Faggian </p>
-
-		</footer>
+		</form>
 
 	</body>
 
